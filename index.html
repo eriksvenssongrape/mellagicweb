@@ -57,8 +57,10 @@
     }
 
     header img {
-      height: 120px;
+      height: auto;
+      max-height: 120px;      /* keeps it from getting too big on desktop */
       width: auto;
+      max-width: 90%;         /* prevents it from overflowing on mobile */
       opacity: 0.9;
       transition: opacity 0.25s ease;
     }
